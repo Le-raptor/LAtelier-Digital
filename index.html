@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>L'Atelier Digital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>L'Atelier Digital</header>
+
+<div class="tabs">
+  <div class="tab-button active" data-tab="home">Accueil</div>
+  <div class="tab-button" data-tab="portfolio">Portfolio</div>
+  <div class="tab-button" data-tab="about">À propos</div>
+  <div class="tab-button" data-tab="services">Services</div>
+  <div class="tab-button" data-tab="contact">Contact</div>
+  <div class="tab-button" data-tab="testimonials">Témoignages</div>
+</div>
+
+<div class="tab-content active fade-slide-in" id="home">
+  <div class="section">
+    <h2>Des solutions web et automatisation sur mesure</h2>
+    <p>Je crée des sites web modernes et des scripts automatisés qui vous aident à gagner du temps et à développer votre activité. Contactez-moi pour concrétiser votre projet !</p>
+  </div>
+</div>
+
+<div class="tab-content" id="portfolio">
+  <div class="section">
+    <h2>Mes Réalisations</h2>
+    <ul>
+      <li>Site vitrine pour une boutique locale</li>
+      <li>Automatisation de gestion d’emails pour un petit commerce</li>
+      <li>Application web de prise de rendez-vous</li>
+    </ul>
+  </div>
+</div>
+
+<div class="tab-content" id="about">
+  <div class="section">
+    <h2>À propos de moi</h2>
+    <p>Je suis un étudiant créatif qui adore bricoler, coder et créer des projets innovants en HTML, JavaScript et plus encore.</p>
+  </div>
+</div>
+
+<div class="tab-content" id="services">
+  <div class="section">
+    <h2>Mes services</h2>
+    <div class="services-cards">
+
+      <div class="card">
+        <h3>💻 Site vitrine</h3>
+        <p>Un site professionnel, élégant et responsive pour présenter votre activité.</p>
+        <p class="price">À partir de 300€</p>
+      </div>
+
+      <div class="card">
+        <h3>📱 Application web personnalisée</h3>
+        <p>Développement d'applications web sur mesure selon vos besoins spécifiques.</p>
+        <p class="price">Sur devis</p>
+      </div>
+
+      <div class="card">
+        <h3>⚙️ Scripts d'automatisation</h3>
+        <p>Automatisez vos tâches répétitives pour gagner du temps et optimiser vos processus.</p>
+        <p class="price">À partir de 150€</p>
+      </div>
+
+      <div class="card">
+        <h3>🎨 Design sur mesure</h3>
+        <p>Création d'identité visuelle et design unique adapté à votre image.</p>
+        <p class="price">Sur devis</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="tab-content" id="contact">
+  <div class="section">
+    <h2>Contacte-moi</h2>
+    <form id="contact-form">
+      <label>Nom</label>
+      <input type="text" name="from_name" placeholder="Votre nom" required>
+
+      <label>Email</label>
+      <input type="email" name="reply_to" placeholder="Votre adresse mail" required>
+
+      <label>Quel type de projet ?</label>
+      <select name="project_type" required>
+        <option>Site vitrine</option>
+        <option>Script automatisé</option>
+        <option>Application web</option>
+        <option>Autre</option>
+      </select>
+
+      <label>Description du projet</label>
+      <textarea name="message" placeholder="Expliquez-moi votre idée ici..." required></textarea>
+      
+      <input type="hidden" name="date" id="date-field">
+
+      <button type="submit">Envoyer la commande</button>
+      <div id="status-message" style="margin-top:10px; font-weight:600; color:#0ea5e9; display:none;">Envoi en cours...</div>
+    </form>
+  </div>
+</div>
+
+<div class="tab-content" id="testimonials">
+  <div class="section">
+    <h2>Témoignages</h2>
+    <blockquote>
+      <p>“Site superbe, professionnel et facile à gérer.” — Mme Dupont</p>
+    </blockquote>
+    <blockquote>
+      <p>“Un travail très efficace, je recommande à 100%.” — M. Martin</p>
+    </blockquote>
+  </div>
+</div>
+
+<footer>
+  Fait avec passion - 2025
+</footer>
+
+<script src="main.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="envoie.js"></script>
+</body>
+</html>
